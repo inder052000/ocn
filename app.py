@@ -20,7 +20,7 @@ def upload():
 		words = classifier.classify()
 		os.remove(f.filename)
 		return render_template("show_entries.html", data=words)
-
+#GET Method
 @app.route('/about', methods =['GET'])
 def about():
     return render_template("about.html")
